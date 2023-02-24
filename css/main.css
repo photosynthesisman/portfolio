@@ -1,0 +1,76 @@
+@import url('normalize.css');
+@import url('reset.css');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* font-family: 'AppleSDGothicNeo', 'Noto Sans KR', sans-serif; */
+/* font-family: 'Montserrat', sans-serif; */
+body {font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;}
+.eng {font-family:'Montserrat', sans-serif;}
+.flex {display:flex;}
+.jcsb {justify-content:space-between;}
+.aic {align-items:center;}
+
+.gnb {position:fixed; width:100%; z-index:200; padding:30px; box-sizing:border-box;}
+.gnb .logo a {display:inline-block; width:91px; height:41px; background:url(../image/logo.png) no-repeat; text-indent:-9999em;}
+.gnb .menu_list {font-size:0; line-height:41px}
+.gnb .menu_list .line {display:inline-block; position:relative; width:42px; height:4px; vertical-align:middle; background:#fff; border-radius:5px;}
+.gnb .menu_list .line::before, .gnb .menu_list .line::after {content:''; position:absolute; left:0; height:4px; background:#fff; border-radius:5px; transition:.5s;} 
+.gnb .menu_list .line::before {width:31px; top:-11px;}
+.gnb .menu_list .line::after {width:37px; bottom:-11px;} 
+.gnb .menu_list.close .line {width:32px; background:transparent;}
+.gnb .menu_list.close .line::before {width:42px; transform:rotate(45deg); transform-origin:6px 0;}
+.gnb .menu_list.close .line::after {width:42px; transform:rotate(-45deg); transform-origin:3px 3px;}
+
+.gnb_background {position:absolute; top:0; bottom:0; right:0; left:100%; z-index:150; padding:158px 0 0 80px; background:#daeaf1;}
+.gnb_background ul {margin-bottom:34px;}
+.gnb_background li {text-transform:uppercase; font-size:48px; line-height:88px; font-weight:600; letter-spacing:-0.02em; white-space: nowrap;}
+.gnb_background li:hover a {color:#00b4ff !important;}
+.gnb_background .gnb_contact {font-size:22px; line-height:32px; white-space: nowrap;}
+
+.section.step1, .section.step2, .section.step3, .section.step4, .section.step5 {position: relative;}
+#fullpage .center_line {position:absolute; top:0; bottom:0; left:50%; transform:translateX(-50%); width:1px; background:rgba(255,255,255,.5);}
+.section.step1 {background:url(../image/background_1.png) center 55% / 100% no-repeat;}
+.section.step2 {background:url(../image/background_2.png) center 30% / 125% no-repeat;}
+.section.step3 {background:url(../image/background_3.png) 0% 40% / 100% no-repeat;}
+.section.step4 {background:url(../image/background_4.png) center 25% / 100% no-repeat;}
+.section.step5 {background:black;}
+.section.step1:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,180,255,.1);}
+.section.step2:after, .section.step3:after, .section.step4:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
+
+.section.step1 .txt_wrap {position:absolute; top:calc(50% - 80px); left:50%; transform:translate(-50%,-50%); width:100%; z-index:100; text-align: center;}
+.section.step1 h2 {margin-bottom:17px; color:#fff; font-size:120px; font-weight:bold; text-transform:uppercase; line-height:1; visibility:hidden; opacity:0; transition:opacity 2s, visibility 2s;}
+.section.step1 h2.visible {visibility:visible; opacity:1;}
+.section.step1 h2 strong {color:#00d8ff;}
+.section.step1 p {position:absolute; left:50%; width:0; text-align:left; font-size:38px; color:#fff; line-height:46px; letter-spacing:-0.06em; overflow:hidden; white-space:nowrap; transition:width 3s;}
+.section.step1 p.visible {width:100%;}
+.section.step1 p strong {font-weight:bold;}
+
+#fullpage .txt_wrap {position:absolute; top:calc(50% - 80px); left:50%; transform:translate(-50%,-50%); width:100%; z-index:100; color:#fff; text-align: center;}
+#fullpage .txt_wrap .number_wrap {position:relative; height:155px; margin-bottom:50px;}
+#fullpage .number_wrap .num {position:absolute; top:0; font-size:88px; font-weight:300;}
+.section.step2 .number_wrap .num {transform:translateX(calc(-100% + 10px));}
+.section.step3 .number_wrap .num, .section.step4 .number_wrap .num {transform:translateX(calc(-100% + 4px));} 
+#fullpage .number_wrap h2 {position:absolute; transform:translateY(calc(50% - 10px)); color:#00d8ff; font-size:120px; font-weight:bold;}
+.section.step2 .number_wrap h2 {left:50%;}
+.section.step3 .number_wrap h2, .section.step4 .number_wrap h2 {left:calc(50% + 2px);}
+#fullpage .portfolio_title {margin-bottom:30px; font-size:48px; font-weight:bold; letter-spacing:-0.06em;}
+#fullpage .txt_wrap p {margin-bottom:50px; font-size:22px; font-weight:500; line-height:30px; letter-spacing:-0.04em;}
+#fullpage .link_button {position:absolute; left:calc(50% - 20px);}
+#fullpage .link_button .icon {position:relative; width:40px; height:40px; border-radius:50%; background-position:center center; background-repeat:no-repeat; background-image:url(../image/Chevron_Right.png); background-color:#fff; transition:.3s}
+#fullpage .link_button .icon:before {content:''; position:absolute; top:50%; transform:translateY(-50%); width:0; height:2px; background:#000; visibility:hidden; transition:.3s}
+#fullpage .link_button .icon:after {content:''; position:absolute; left:0; z-index:-1; width:40px; height:40px; background:#fff; border-radius:25px; visibility:hidden; transition:.3s}
+#fullpage .link_button .link_text {margin-left:12px; color:#fff; font-size:16px; font-weight:600; text-transform:uppercase; letter-spacing:-0.02em; transition:.3s}
+#fullpage .link_button:hover .icon {background-position:center right;}
+#fullpage .link_button:hover .icon:before {width:18px; visibility:visible;}
+#fullpage .link_button:hover .icon:after {width:200px;visibility:visible;}
+#fullpage .link_button:hover .link_text {color:#000;}
+
+.section.step5, .section.step5 a {color:#fff}
+.section.step5 .contact_wrap {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align:center;}
+.section.step5 .contact_wrap h2 {transform:translateY(-100px); margin-bottom:50px; color:#00d8ff; font-size:88px; font-weight:900; letter-spacing:-0.02em; opacity:0; transition:1s;}
+.section.step5 .contact_wrap .fade_down {transform:translateY(0); opacity:1;}
+.section.step5 .contact_wrap .contact {transform:translateY(100px); font-size:48px; letter-spacing:-0.02em; line-height:60px; opacity:0; transition:1s;}
+.section.step5 .contact_wrap .contact.fade_up {transform:translateY(0); opacity:1;}
+.section.step5 .copy {position:absolute; left:50%; bottom:50px; transform:translateX(-50%); font-size:18px;}
+
+#fp-nav ul li a span, .fp-slidesNav ul li a span {background:#fff;}
