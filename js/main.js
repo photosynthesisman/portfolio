@@ -60,3 +60,12 @@ $(document).ready(function() {
 		}
 	});	
 });
+
+$(document).click(function(e) {
+  if(!$('.menu_list').has(e.target).length && $('.menu_list').hasClass('close')==true ){
+    $('.menu_list').removeClass('close');
+    $('.gnb_background').animate({
+      left:"100%"				
+    }, 1000)
+  } 
+  });
