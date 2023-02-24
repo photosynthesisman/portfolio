@@ -27,15 +27,17 @@ body {font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;}
 .gnb_background li:hover a {color:#00b4ff !important;}
 .gnb_background .gnb_contact {font-size:22px; line-height:32px; white-space: nowrap;}
 
-.section.step1, .section.step2, .section.step3, .section.step4, .section.step5 {position: relative;}
+.section.step1, .section.step2, .section.step3, .section.step4, .section.last_step {position: relative;}
 #fullpage .center_line {position:absolute; top:0; bottom:0; left:50%; transform:translateX(-50%); width:1px; background:rgba(255,255,255,.5);}
 .section.step1 {background:url(../image/background_1.png) center 55% / 100% no-repeat;}
 .section.step2 {background:url(../image/background_2.png) center 30% / 125% no-repeat;}
 .section.step3 {background:url(../image/background_3.png) 0% 40% / 100% no-repeat;}
 .section.step4 {background:url(../image/background_4.png) center 25% / 100% no-repeat;}
-.section.step5 {background:black;}
+.section.step5 {background:url(../image/background_5.png) center 25% / 100% no-repeat;}
+.section.last_step {background:black;}
 .section.step1:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,180,255,.1);}
-.section.step2:after, .section.step3:after, .section.step4:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
+.section.step2:after, .section.step3:after, .section.step4:after  {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
+.section.step5:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(rgba(0,0,0,.4), transparent 70%);}
 
 .section.step1 .txt_wrap {position:absolute; top:calc(50% - 80px); left:50%; transform:translate(-50%,-50%); width:100%; z-index:100; text-align: center;}
 .section.step1 h2 {margin-bottom:17px; color:#fff; font-size:120px; font-weight:bold; text-transform:uppercase; line-height:1; visibility:hidden; opacity:0; transition:opacity 2s, visibility 2s;}
@@ -49,10 +51,14 @@ body {font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;}
 #fullpage .txt_wrap .number_wrap {position:relative; height:155px; margin-bottom:50px;}
 #fullpage .number_wrap .num {position:absolute; top:0; font-size:88px; font-weight:300;}
 .section.step2 .number_wrap .num {transform:translateX(calc(-100% + 10px));}
-.section.step3 .number_wrap .num, .section.step4 .number_wrap .num {transform:translateX(calc(-100% + 4px));} 
+.section.step3 .number_wrap .num, 
+.section.step4 .number_wrap .num,
+.section.step5 .number_wrap .num{transform:translateX(calc(-100% + 4px));} 
 #fullpage .number_wrap h2 {position:absolute; transform:translateY(calc(50% - 10px)); color:#00d8ff; font-size:120px; font-weight:bold;}
 .section.step2 .number_wrap h2 {left:50%;}
-.section.step3 .number_wrap h2, .section.step4 .number_wrap h2 {left:calc(50% + 2px);}
+.section.step3 .number_wrap h2, 
+.section.step4 .number_wrap h2,
+.section.step5 .number_wrap h2 {left:calc(50% + 2px);}
 #fullpage .portfolio_title {margin-bottom:30px; font-size:48px; font-weight:bold; letter-spacing:-0.06em;}
 #fullpage .txt_wrap p {margin-bottom:50px; font-size:22px; font-weight:500; line-height:30px; letter-spacing:-0.04em;}
 #fullpage .link_button {position:absolute; left:calc(50% - 20px);}
@@ -65,12 +71,12 @@ body {font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;}
 #fullpage .link_button:hover .icon:after {width:200px;visibility:visible;}
 #fullpage .link_button:hover .link_text {color:#000;}
 
-.section.step5, .section.step5 a {color:#fff}
-.section.step5 .contact_wrap {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align:center;}
-.section.step5 .contact_wrap h2 {transform:translateY(-100px); margin-bottom:50px; color:#00d8ff; font-size:88px; font-weight:900; letter-spacing:-0.02em; opacity:0; transition:1s;}
-.section.step5 .contact_wrap .fade_down {transform:translateY(0); opacity:1;}
-.section.step5 .contact_wrap .contact {transform:translateY(100px); font-size:48px; letter-spacing:-0.02em; line-height:60px; opacity:0; transition:1s;}
-.section.step5 .contact_wrap .contact.fade_up {transform:translateY(0); opacity:1;}
-.section.step5 .copy {position:absolute; left:50%; bottom:50px; transform:translateX(-50%); font-size:18px;}
+.section.last_step, .section.last_step a {color:#fff}
+.section.last_step .contact_wrap {position:absolute; left:50%; top:50%; transform:translate(-50%,-50%); text-align:center;}
+.section.last_step .contact_wrap h2 {transform:translateY(-100px); margin-bottom:50px; color:#00d8ff; font-size:88px; font-weight:900; letter-spacing:-0.02em; opacity:0; transition:1s;}
+.section.last_step .contact_wrap .fade_down {transform:translateY(0); opacity:1;}
+.section.last_step .contact_wrap .contact {transform:translateY(100px); font-size:48px; letter-spacing:-0.02em; line-height:60px; opacity:0; transition:1s;}
+.section.last_step .contact_wrap .contact.fade_up {transform:translateY(0); opacity:1;}
+.section.last_step .copy {position:absolute; left:50%; bottom:50px; transform:translateX(-50%); font-size:18px;}
 
 #fp-nav ul li a span, .fp-slidesNav ul li a span {background:#fff;}

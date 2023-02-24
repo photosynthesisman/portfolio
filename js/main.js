@@ -4,7 +4,7 @@ $(document).ready(function() {
 		autoScrolling:true,
 		scrollHorizontally: true,
 		navigation: true,
-		anchors:['page1', 'page2', 'page3', 'page4', 'page5'],
+		anchors:['page1', 'page2', 'page3', 'page4', 'page5','page6'],
 		afterLoad: function(anchorLink, index){            
             if(index == 1){
                 $('.gnb_background .page1').css('color', '#00b4ff;');
@@ -30,14 +30,14 @@ $(document).ready(function() {
             }else{
 				$('.gnb_background .page4').css('color', '#000;');                                                                                                         
             };
-			if(index == 5){
-                $('.gnb_background .page5').css('color', '#00b4ff;');
-				$('.section.step5').find('h2').addClass('fade_down');
-				$('.section.step5').find('.contact').addClass('fade_up');
+			if(index == 6){
+                $('.gnb_background .page6').css('color', '#00b4ff;');
+				$('.section.last_step').find('h2').addClass('fade_down');
+				$('.section.last_step').find('.contact').addClass('fade_up');
             }else{
-				$('.gnb_background .page5').css('color', '#000;');
-				$('.section.step5').find('h2').removeClass('fade_down');
-				$('.section.step5').find('.contact').removeClass('fade_up');
+				$('.gnb_background .page6').css('color', '#000;');
+				$('.section.last_step').find('h2').removeClass('fade_down');
+				$('.section.last_step').find('.contact').removeClass('fade_up');
             };		
 		}		
 	});
