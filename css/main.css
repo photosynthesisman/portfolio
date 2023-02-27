@@ -136,7 +136,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   .section.step1 h2 {font-size: 8rem;}
 
   #fullpage .number_wrap h2 {font-size: 8rem;}
-  #fullpage .txt_wrap .number_wrap {margin-top: 3rem; margin-bottom: 0;}
+  #fullpage .txt_wrap .number_wrap {margin-top: 6rem; margin-bottom: 0;}
 }
 
 @media screen and (max-width: 700px){  
