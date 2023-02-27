@@ -189,6 +189,8 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   .gnb_background {padding: 10rem 0 0 2rem;}
   .gnb_background li {font-size:1.5rem; line-height:3.2rem;}
 
+  #fullpage .txt_wrap {top:calc(50% - 6rem);}
+
   #fullpage .number_wrap .num {font-size: 3.6rem;}
   #fullpage .number_wrap h2 {font-size: 3.6rem;}
 
