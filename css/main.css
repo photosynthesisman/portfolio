@@ -21,10 +21,11 @@ body {font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-serif;}
 .gnb .menu_list.close .line::before {width:42px; transform:rotate(45deg); transform-origin:6px 0;}
 .gnb .menu_list.close .line::after {width:42px; transform:rotate(-45deg); transform-origin:3px 3px;}
 
-.gnb_background {position:absolute; z-index: 101; left:100%; top:0; right:0; bottom:0; padding:158px 0 0 80px; background:#daeaf1;}
-.gnb_background ul {margin-bottom:34px;}
+.gnb_background {position:absolute; z-index: 101; left:100%; top:0; right:0; bottom:0; padding:100px 0 0 80px; background:#daeaf1;}
+.gnb_background ul {margin-bottom:48px;}
 .gnb_background li {text-transform:uppercase; font-size:48px; line-height:88px; font-weight:600; letter-spacing:-0.02em; white-space: nowrap;}
 .gnb_background li:hover a {color:#00b4ff !important;}
+.gnb_background li a.add-color {color: #00b4ff;}
 .gnb_background .gnb_contact {font-size:22px; line-height:32px; white-space: nowrap;}
 
 .section.step1, .section.step2, .section.step3, .section.step4, .section.last_step {position: relative;}

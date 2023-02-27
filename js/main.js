@@ -6,39 +6,26 @@ $(document).ready(function() {
 		navigation: true,
 		anchors:['page1', 'page2', 'page3', 'page4', 'page5','page6'],
 		afterLoad: function(anchorLink, index){            
-            if(index == 1){
-                $('.gnb_background .page1').css('color', '#00b4ff;');
+      var slice = anchorLink.slice(4);      
+      if(index == 1){      
 				$('.section.step1').find('h2').addClass('visible');			
 				$('.section.step1').find('p').addClass('visible');			
-            }else if(index != 1){
-				$('.gnb_background .page1').css('color', '#000;'); 
-				$('.section.step1').find('h2').removeClass('visible');									                                                                              
-				$('.section.step1').find('p').removeClass('visible');									                                                                              
-            };
-			if(index == 2){
-                $('.gnb_background .page2').css('color', '#00b4ff;');
-            }else{
-				$('.gnb_background .page2').css('color', '#000;');                                                                                                         
-            };
-			if(index == 3){
-                $('.gnb_background .page3').css('color', '#00b4ff;');
-            }else{
-				$('.gnb_background .page3').css('color', '#000;');                                                                                                         
-            };
-			if(index == 4){
-                $('.gnb_background .page4').css('color', '#00b4ff;');
-            }else{
-				$('.gnb_background .page4').css('color', '#000;');                                                                                                         
-            };
-			if(index == 6){
-                $('.gnb_background .page6').css('color', '#00b4ff;');
+      };     
+
+      if(index == slice){
+        var classNum = ($('.gnb_background .eng').find('a').eq(index - 1));        
+        console.log(classNum)
+        $('.gnb_background .eng').find('a').removeClass('add-color');
+        classNum.addClass('add-color');        
+      }      
+      
+			if(index == 6){                
 				$('.section.last_step').find('h2').addClass('fade_down');
 				$('.section.last_step').find('.contact').addClass('fade_up');
-            }else{
-				$('.gnb_background .page6').css('color', '#000;');
+      }else{				
 				$('.section.last_step').find('h2').removeClass('fade_down');
 				$('.section.last_step').find('.contact').removeClass('fade_up');
-            };		
+      };		
 		}		
 	});
 
