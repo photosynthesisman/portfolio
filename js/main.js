@@ -34,14 +34,10 @@ $(document).ready(function() {
 		e.preventDefault();		
 		if($(this).hasClass('close')){
 			$(this).removeClass('close');
-			$('.gnb_background').animate({
-				left:"100%"				
-			}, 1000)
+			$('.gnb_background').removeClass('fadeIn');			
 		}else{
-			$(this).addClass('close');		
-			$('.gnb_background').animate({
-				left:"60%"				
-			}, 1000)
+      $(this).addClass('close');		
+			$('.gnb_background').addClass('fadeIn');			
 		}
 	});	
 });
