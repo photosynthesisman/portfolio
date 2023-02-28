@@ -41,7 +41,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .section.last_step {background:black;}
 .section.step1:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,180,255,.1);}
 .section.step2:after, .section.step3:after, .section.step4:after  {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
-.section.step5:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(rgba(0,0,0,.4), transparent 70%);}
+.section.step5:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(rgba(0,0,0,.3), transparent 60%);}
 
 .section.step1 .txt_wrap {position:absolute; top:calc(50% - 80px); left:50%; transform:translate(-50%,-50%); width:100%; z-index:100; text-align: center;}
 .section.step1 h2 {margin-bottom:1.7rem; padding: 0 8rem; color:#fff; font-size:12rem; font-weight:bold; text-transform:uppercase; line-height:1; visibility:hidden; opacity:0; transition:opacity 2s, visibility 2s;}
