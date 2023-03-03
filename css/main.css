@@ -89,7 +89,11 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 
 @media screen and (max-width: 1500px){  
   .section.step2 {background:url(../image/background_2.png) center 30% / cover no-repeat;}
-  .section.step5 {background: url(../image/background_5.png) center 25% / cover no-repeat;}
+  .section.step6 {background: url(../image/background_5.png) center 25% / cover no-repeat;}
+}
+
+@media screen and (max-width: 1350px){  
+  .section.step5 {background: url(../image/background_6.png) center 25% / cover no-repeat;}
 }
 
 @media screen and (max-width: 1300px){  
@@ -115,6 +119,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 }
 @media screen and (max-width: 900px){  
   .section.step1 h2 br {display: block;}
+  .section.step5 {background: url(../image/background_6.png) 80% 25% / cover no-repeat;}
 
   .gnb_background li {font-size:2.4rem; line-height:4.6rem;}
   .gnb_background .gnb_contact {font-size: 1.4rem; line-height: 2.4rem;}
@@ -198,4 +203,8 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   #fullpage .txt_wrap p {font-size: 1.2rem; line-height:1.8rem;}
 
   #fullpage .link_button .link_text {font-size: 1.2rem;}
+}
+
+@media screen and (max-width: 350px){  
+  .section.step5 {background: url(../image/background_6.png) 75% 25% / cover no-repeat;}
 }
