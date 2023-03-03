@@ -25,7 +25,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .gnb_background {position:absolute; z-index: 101; left:100%; top:0; right:0; bottom:0; padding:10rem 0 0 8rem; background:#daeaf1; transition: left 1s;}
 .gnb_background.fadeIn {left:60%}
 .gnb_background ul {margin-bottom:4.8rem;}
-.gnb_background li {text-transform:uppercase; font-size:4.8rem; line-height:8.8rem; font-weight:600; letter-spacing:-0.02em; white-space: nowrap;}
+.gnb_background li {text-transform:uppercase; font-size:4rem; line-height:7.2rem; font-weight:600; letter-spacing:-0.02em; white-space: nowrap;}
 .gnb_background li:hover a {color:#00b4ff !important;}
 .gnb_background li a.add-color {color: #00b4ff;}
 .gnb_background .gnb_contact {font-size:2.2rem; line-height:3.2rem; white-space: nowrap;}
@@ -37,11 +37,12 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .section.step2 {background:url(../image/background_2.png) center 30% / 125% no-repeat;}
 .section.step3 {background:url(../image/background_3.png) 0% 40% / 100% no-repeat;}
 .section.step4 {background:url(../image/background_4.png) center 25% / 100% no-repeat;}
-.section.step5 {background:url(../image/background_5.png) center 25% / 100% no-repeat;}
+.section.step5 {background:url(../image/background_6.png) center 25% / 100% no-repeat;}
+.section.step6 {background:url(../image/background_5.png) center 25% / 100% no-repeat;}
 .section.last_step {background:black;}
 .section.step1:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:rgba(0,180,255,.1);}
-.section.step2:after, .section.step3:after, .section.step4:after  {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
-.section.step5:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(rgba(0,0,0,.3), transparent 60%);}
+.section:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(transparent,rgba(0,0,0,.5) 80%);}
+.section.step6:after {content:''; position:absolute; left:0; top:0; right:0; bottom:0; background:radial-gradient(rgba(0,0,0,.3), transparent 60%);}
 
 .section.step1 .txt_wrap {position:absolute; top:calc(50% - 80px); left:50%; transform:translate(-50%,-50%); width:100%; z-index:100; text-align: center;}
 .section.step1 h2 {margin-bottom:1.7rem; padding: 0 8rem; color:#fff; font-size:12rem; font-weight:bold; text-transform:uppercase; line-height:1; visibility:hidden; opacity:0; transition:opacity 2s, visibility 2s;}
@@ -56,14 +57,10 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 #fullpage .txt_wrap .number_wrap {position:relative; height:15.5rem; margin-bottom:5rem;}
 #fullpage .number_wrap .num {position:absolute; top:0; font-size:8.8rem; font-weight:300;}
 .section.step2 .number_wrap .num {transform:translateX(calc(-100% + 1rem));}
-.section.step3 .number_wrap .num, 
-.section.step4 .number_wrap .num,
-.section.step5 .number_wrap .num{transform:translateX(calc(-100% + .4rem));} 
+.section .number_wrap .num{transform:translateX(calc(-100% + .4rem));} 
 #fullpage .number_wrap h2 {position:absolute; transform:translateY(calc(50% - 1rem)); color:#00d8ff; font-size:12rem; font-weight:bold;}
 .section.step2 .number_wrap h2 {left:50%;}
-.section.step3 .number_wrap h2, 
-.section.step4 .number_wrap h2,
-.section.step5 .number_wrap h2 {left:calc(50% + .2rem);}
+.section .number_wrap h2 {left:calc(50% + .2rem);}
 #fullpage .portfolio_title {margin-bottom:3rem; font-size:4.8rem; font-weight:bold; letter-spacing:-0.06em;}
 #fullpage .portfolio_title br {display: none;}
 #fullpage .txt_wrap p {margin-bottom:5rem; font-size:2.2rem; font-weight:500; line-height:3rem; letter-spacing:-0.04em;}

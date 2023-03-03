@@ -19,7 +19,7 @@ $(document).ready(function() {
         $('.gnb_background .eng').find('a').removeClass('add-color');
         classNum.addClass('add-color');        
       }            
-			if(index == 6){                
+			if(index == 7){                
         $('.section.last_step').addClass('visible');
 				$('.section.last_step').find('h2').addClass('fade_down');
 				$('.section.last_step').find('.contact').addClass('fade_up');
