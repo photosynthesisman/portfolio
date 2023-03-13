@@ -52,14 +52,18 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .section.step1 p {position:absolute; left:50%; width:0; text-align:left; font-size:3.8rem; color:#fff; line-height:4.6rem; letter-spacing:-0.06em; overflow:hidden; white-space:nowrap; transition:width 3s;}
 .section.step1 p.visible {width:100%;}
 .section.step1 p strong {font-weight:bold;}
+.section.step2 .number_wrap h2 {left:50%;}
+.section.step2 .number_wrap .num {transform:translateX(calc(-100% + 1rem));}
+.section.step5 .number_wrap h2 {left:calc(50% + -.05rem);}
+.section.step5 .number_wrap .num {transform: translateX(-100%);}
+.section.step6 .number_wrap h2 {left:calc(50% - .85rem);}
+.section.step6 .number_wrap .num {transform:translateX(calc(-100% + 0.25rem));}
 
 #fullpage .txt_wrap {position:absolute; top:calc(50% - 8rem); left:50%; transform:translate(-50%,-50%); z-index:100; width: 100%; color:#fff; text-align: center;}
 #fullpage .txt_wrap .number_wrap {position:relative; height:15.5rem; margin-bottom:5rem;}
 #fullpage .number_wrap .num {position:absolute; top:0; font-size:8.8rem; font-weight:300;}
-.section.step2 .number_wrap .num {transform:translateX(calc(-100% + 1rem));}
 .section .number_wrap .num{transform:translateX(calc(-100% + .4rem));} 
 #fullpage .number_wrap h2 {position:absolute; transform:translateY(calc(50% - 1rem)); color:#00d8ff; font-size:12rem; font-weight:bold;}
-.section.step2 .number_wrap h2 {left:50%;}
 .section .number_wrap h2 {left:calc(50% + .2rem);}
 #fullpage .portfolio_title {margin-bottom:3rem; font-size:4.8rem; font-weight:bold; letter-spacing:-0.06em;}
 #fullpage .portfolio_title br {display: none;}
