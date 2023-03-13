@@ -15,12 +15,14 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .gnb .logo a {display:inline-block; width:9.1rem; height:4.1rem; background:url(../image/logo.png) no-repeat; text-indent:-9999em;}
 .gnb .menu_list {font-size:0; line-height:4.1rem}
 .gnb .menu_list .line {display:inline-block; position:relative; width:4.2rem; height:.4rem; vertical-align:middle; background:#fff; border-radius:.5rem;}
-.gnb .menu_list .line::before, .gnb .menu_list .line::after {content:''; position:absolute; left:0; height:.4rem; background:#fff; border-radius:.5rem; transition:.5s;} 
+.gnb .menu_list .line::before, .gnb .menu_list .line::after {content:''; position:absolute; right: 0; height:.4rem; background:#fff; border-radius:.5rem; transition:all .5s;} 
 .gnb .menu_list .line::before {width:3.1rem; top:-1.1rem;}
+.gnb .menu_list.move .line::before {right: calc(100% - 3.1rem);}
+.gnb .menu_list.move .line::after {right: calc(100% - 3.7rem);}
 .gnb .menu_list .line::after {width:3.7rem; bottom:-1.1rem;} 
 .gnb .menu_list.close .line {width:3.2rem; background:transparent;}
-.gnb .menu_list.close .line::before {width:4.2rem; transform:rotate(45deg); transform-origin:.6rem 0;}
-.gnb .menu_list.close .line::after {width:4.2rem; transform:rotate(-45deg); transform-origin:.3rem 0.3rem;}
+.gnb .menu_list.close .line::before {width:4.2rem; transform:rotate(45deg); transform-origin:0rem 0rem;}
+.gnb .menu_list.close .line::after {width:4.2rem; transform:rotate(-45deg); transform-origin:0.5rem 1.3rem;}
 
 .gnb_background {position:absolute; z-index: 101; left:100%; top:0; right:0; bottom:0; padding:10rem 0 0 8rem; background:#daeaf1; transition: left 1s;}
 .gnb_background.fadeIn {left:60%}
