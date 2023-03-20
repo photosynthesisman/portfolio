@@ -9,6 +9,7 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){   
 			$('.section').find('.number_wrap').find('h2').removeClass('visible');	         			
 			$('.section').find('h3').removeClass('width');	
+			$('.section.step1').find('h2').removeClass('visible');		
 			$('.section.step1').find('p').removeClass('visible');		
 			$('.link_button').removeClass('hover');
       var slice = anchorLink.slice(4);    			
