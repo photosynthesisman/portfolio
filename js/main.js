@@ -1,4 +1,4 @@
-$(document).ready(function() {	
+$(document).ready(function() {	 
 	
 	$('#fullpage').fullpage({		
 		//options here
@@ -12,28 +12,34 @@ $(document).ready(function() {
 			$('.section.step1').find('h2').removeClass('visible');		
 			$('.section.step1').find('p').removeClass('visible');		
 			$('.link_button').removeClass('hover');
-      var slice = anchorLink.slice(4);    			
+      let slice = anchorLink.slice(4);    			
       $('.go-top').click(function(){
         $.fn.fullpage.moveTo(1);     
-      })									
+      })		                            
+      $('.paint').each(function () {
+        $(this).stop().animate({height: '0'}, 1200)  			
+      })
 			let counters = $('.txt_wrap').find('.eng.num').eq(index - 2);			
 
       if(index == 1){      						
 				$('.section.step1').find('p').addClass('visible');												
       }
-      if(index == slice){		
+      if(index == slice){		      
 				$('.section').eq(index-1).find('h2').addClass('visible');							
 				$('.section').eq(index-1).find('h3').addClass('width');	
 				$('.section').eq(index-1).find($('.link_button')).addClass('hover');						
-        var classNum = ($('.gnb_background .eng').find('a').eq(index - 1));                
+        let classNum = ($('.gnb_background .eng').find('a').eq(index - 1));                
 				$('.gnb_background .eng').find('a').removeClass('add-color');
-        classNum.addClass('add-color');    				
+        classNum.addClass('add-color');  
+        $('.section').eq(index-1).find('.paint').each(function () {
+          $(this).stop().animate({height: '100%'}, 5000)      				
+        })
 				
 				let targetNum = counters.attr('data-num');     		 
 				function numberAnimate(){
-					var num = 0;					
-					var speed = 130;        
-					var animateTimer = setInterval(function(){
+					let num = 0;					
+					let speed = 130;        
+					let animateTimer = setInterval(function(){
 							++num;
 							counters.text(num); 
 							if(num == targetNum){
@@ -50,7 +56,7 @@ $(document).ready(function() {
       }else{				
         $('.section.last_step').removeClass('visible');
 				$('.section.last_step').find('h2').removeClass('fade_down');
-				$('.section.last_step').find('.contact').removeClass('fade_up');
+				$('.section.last_step').find('.contact').removeClass('fade_up');        
       };		
 		}		
 	});
@@ -103,6 +109,7 @@ $(document).ready(function() {
 			}
 		})
 	}
+
 	dim_click();
 	link_hover();
 	gnb_button();

@@ -37,6 +37,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 
 .section.step1, .section.step2, .section.step3, .section.step4, .section.last_step {position: relative;}
 #fullpage .center_line {position:absolute; top:0; bottom:0; left:50%; transform:translateX(-50%); width:.1rem; background:rgba(255,255,255,.5);}
+#fullpage .center_line .paint {content:''; position:absolute; top:0; left:0; right:0; background: #00d8ff;} 
 .section.step1 {background:url(../image/background_1.png) center 55% / 100% no-repeat;}
 .section.step2 {background:url(../image/background_2.png) center 30% / 125% no-repeat;}
 .section.step3 {background:url(../image/background_3.png) 0% 40% / 100% no-repeat;}
