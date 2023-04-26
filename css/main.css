@@ -59,8 +59,20 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 .section.step1 p.visible {width:100%;}
 .section.step1 p strong {font-weight:bold;}
 #fullpage .section.step2 .txt_wrap .data_box {transform:translateX(calc(-100% + 1rem));}
-#fullpage .section.step5 .txt_wrap .data_box {transform:translateX(calc(-100% + .1rem));}
 #fullpage .section.step2 .number_wrap h2 {left: 50%;}
+#fullpage .section.step4 .number_wrap h2 {top:50%; left: 6rem; transform: none;}
+#fullpage .section.step4 .txt_wrap {top: calc(50% - 3rem);}
+#fullpage .section.step4 .txt_wrap p {margin-bottom: 0;}
+#fullpage .section.step4 .portfolio_title {margin-bottom: 10rem;}
+#fullpage .section.step4 .txt_wrap p, 
+#fullpage .section.step4 .portfolio_title,
+#fullpage .section.step4 .txt_wrap .number_wrap {padding-left: 6rem; text-align: left;}
+#fullpage .section.step4 .flex_wrap {position: relative; margin-bottom: 1.5rem;}
+#fullpage .section.step4 .flex_wrap:last-child {margin-bottom: 0;}
+#fullpage .section.step4 .txt_wrap .num_box .classify {margin-left: 0;}
+#fullpage .section.step4 .link_button {position: absolute; top: 50%; left: 32rem; transform: translateY(-50%);}
+#fullpage .section.step4 .txt_wrap .num_box .data_box {top:-.4rem; left:13.6rem; transform: none;}
+#fullpage .section.step5 .txt_wrap .data_box {transform:translateX(calc(-100% + .1rem));}
 #fullpage .section.step6 .number_wrap h2 {left:calc(50% + -.05rem);}
 #fullpage .section.step7 .number_wrap h2 {left:calc(50% - 1rem);}
 
@@ -176,6 +188,8 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   #fullpage .number_wrap h2 {font-size: 6.4rem;}
   #fullpage .section.step7 .number_wrap h2 {left: calc(50% - .5rem);}
   #fullpage .txt_wrap p {font-size: 1.6rem; line-height:2.4rem;}
+  
+  #fullpage .section.step4 .link_button {left: 26rem;}
 }
 
 @media screen and (max-width: 550px){  
@@ -194,6 +208,13 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   .gnb_background .gnb_contact > a br {display: block;}
 
   .section.last_step .contact_wrap .contact > p {line-height: 1;}
+
+  #fullpage .section.step4 .link_button {left: 22rem;}
+  #fullpage .section.step4 .txt_wrap p, 
+  #fullpage .section.step4 .portfolio_title,
+  #fullpage .section.step4 .txt_wrap .number_wrap {padding-left: 3rem;}
+  #fullpage .section.step4 .number_wrap h2 {left: 3rem;}
+  #fullpage .section.step4 .txt_wrap .num_box .data_box {font-size: 5rem;}
 }
 @media screen and (max-width: 450px){  
   .section.step1 h2 {font-size: 3.6rem;}
@@ -204,6 +225,8 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   .section.last_step .contact_wrap h2 {font-size: 3.6rem;}
   .section.last_step .contact_wrap .contact {font-size: 1.8rem;}
   .section.last_step .go-top {left: 50%; bottom: 8rem; transform: translateX(-50%);}
+
+  #fullpage .section.step4 .link_button {left: 20rem;}
 }
 @media screen and (max-width: 400px){  
   .gnb_background {padding: 10rem 0 0 2rem;}
@@ -222,8 +245,14 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
   #fullpage .txt_wrap p {font-size: 1.2rem; line-height:1.8rem;}
   #fullpage .link_button.hover .icon:after {width: 17rem;}
   #fullpage .link_button .link_text {font-size: 1.2rem;}
+
+  #fullpage .section.step4 .link_button {left: 17rem;}
 }
 
 @media screen and (max-width: 350px){  
   .section.step6 {background: url(../image/background_6.png) 75% 25% / cover no-repeat;}
+  #fullpage .section.step4 .portfolio_title {margin-bottom: 4rem;}
+  #fullpage .section.step4 .flex_wrap {display: flex; flex-wrap: wrap; padding-left: 3rem;}
+  #fullpage .section.step4 .flex_wrap p {width: 100%; margin-bottom:1.2rem; padding-left: 0;}
+  #fullpage .section.step4 .flex_wrap .link_button {position: static; transform: none; left: auto; top: auto;}
 }
