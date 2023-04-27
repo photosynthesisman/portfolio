@@ -92,7 +92,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 #fullpage .link_button .icon:before {content:''; position:absolute; top:50%; transform:translateY(-50%); width:0; height:.2rem; background:#000; visibility:hidden; transition:.75s}
 #fullpage .link_button .icon:after {content:''; position:absolute; left:0; z-index:-1; width:4rem; height:4rem; background:#fff; border-radius:2.5rem; visibility:hidden; transition:.75s}
 #fullpage .link_button .link_text {margin-left:1.2rem; color:#fff; font-size:1.6rem; font-weight:600; text-transform:uppercase; letter-spacing:-0.02em; transition:.75s}
-#fullpage .link_button.have_no .icon {background: #000 url(/image/Chevron_Right_w.png) center / 1rem 1.6rem no-repeat;}
+#fullpage .link_button.have_no .icon {background: #000 url(../image/Chevron_Right_w.png) center / 1rem 1.6rem no-repeat;}
 #fullpage .link_button.have_no .icon:before {background: #fff;}
 #fullpage .link_button.have_no .icon:after {background: #000;}
 #fullpage .link_button.have_no .link_text {color: #fff;}
