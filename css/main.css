@@ -98,6 +98,7 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 #fullpage .link_button.have_no .link_text {color: #fff;}
 #fullpage .link_button.have_no.hover .link_text {color:#fff; white-space: nowrap;}
 #fullpage .link_button.have_no.hover .icon:after {width: 23.5rem;}
+
 #fullpage .link_button.hover .icon {background-position:center right;}
 #fullpage .link_button.hover .icon:before {width:1.8rem; visibility:visible;}
 #fullpage .link_button.hover .icon:after {width:20rem;visibility:visible;}
