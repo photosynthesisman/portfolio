@@ -95,8 +95,8 @@ body {position: relative; font-family:'AppleSDGothicNeo', 'Noto Sans KR', sans-s
 #fullpage .link_button.have_no .icon {background: #000 url(../image/Chevron_Right_w.png) center / 1rem 1.6rem no-repeat;}
 #fullpage .link_button.have_no .icon:before {background: #fff;}
 #fullpage .link_button.have_no .icon:after {background: #000;}
-#fullpage .link_button.have_no .link_text {color: #fff;}
-#fullpage .link_button.have_no.hover .link_text {color:#fff; white-space: nowrap;}
+#fullpage .link_button.have_no .link_text {color: #fff; white-space: nowrap;}
+#fullpage .link_button.have_no.hover .link_text {color:#fff;}
 #fullpage .link_button.have_no.hover .icon:after {width: 23.5rem;}
 
 #fullpage .link_button.hover .icon {background-position:center right;}
