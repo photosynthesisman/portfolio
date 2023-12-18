@@ -126,7 +126,7 @@ $(document).ready(function () {
     });
   }
 
-  const $sky = document.querySelector(".sky");
+  const $sky = document.querySelectorAll(".sky");
   // 브라우저 창 크기에 따른 별 생성
   window.onresize = () => {
     makeStars();
@@ -152,7 +152,10 @@ $(document).ready(function () {
         className="star" />`;
       })
       .join("");
-    $sky.innerHTML = htmlDummy;
+    $sky.forEach((element) => {
+      element.innerHTML = htmlDummy;
+    });
+    // $sky.innerHTML = htmlDummy;
   };
   window.onload = () => {
     makeStars();

@@ -238,7 +238,7 @@ body {
 .sky {
   width: 100vw;
   height: 100vw;
-  position: fixed;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -249,6 +249,7 @@ body {
   fill: #fff;
   stroke: none;
   stroke-width: 0;
+  filter: drop-shadow(50px 50px 50px rgba(255, 255, 255, 1));
 }
 .material-symbols-outlined {
   position: absolute;
@@ -694,6 +695,10 @@ body {
   .gnb_background {
     padding: 10rem 0 0 6rem;
   }
+  .sky {
+    min-width: auto;
+    min-height: 100vh;
+  }
 }
 @media screen and (max-width: 950px) {
   #fullpage .portfolio_title {
@@ -715,7 +720,6 @@ body {
   .section.step6 {
     background: url(../image/background_6.png) 80% 25% / cover no-repeat;
   }
-
   .gnb_background li {
     font-size: 2.4rem;
     line-height: 4.6rem;
@@ -749,9 +753,12 @@ body {
     font-size: 1.2rem;
     line-height: 2.4rem;
   }
-
   #fullpage .number_wrap .data_box {
     font-size: 8rem;
+  }
+  .sky {
+    min-width: auto;
+    min-height: 100vh;
   }
 }
 @media screen and (max-width: 768px) {
